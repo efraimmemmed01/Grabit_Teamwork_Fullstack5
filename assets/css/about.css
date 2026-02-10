@@ -1,4 +1,152 @@
 #who-we-are {
+  width: 100%;
   display: flex;
-  padding: 40px 172px;
+  height: 705.59px;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+#who-we-are article {
+  width: 762px;
+  font-size: 14px;
+}
+
+#who-we-are aside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 24px;
+  height: 625.59px;
+  width: 772px;
+}
+
+#who-we-are aside img {
+  height: 100%;
+  width: 100%;
+}
+
+aside .img1 {
+  grid-row: span 4 / span 4;
+}
+
+aside .img2 {
+  grid-row: span 2 / span 2;
+}
+
+aside .img3 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+.title {
+  font-family: "Manrope", sans-serif !important;
+  font-weight: 700;
+  font-size: 26px;
+  color: #4b5966;
+}
+.title-desc {
+  font-weight: 500;
+  color: #777777;
+  font-size: 18px;
+  letter-spacing: 0.32px;
+}
+
+/* Services */
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 28px;
+  padding: 40px 0;
+}
+
+#services .heading p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.32px;
+  color: #777777;
+}
+
+#services .cards {
+  display: flex;
+  gap: 24px;
+}
+
+.card {
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  padding: 40px 24px;
+  height: 198px;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.6px;
+}
+
+.card .heading * {
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  color: #4b5966;
+}
+
+/* CEO */
+#CEO {
+  padding: 40px 0;
+}
+
+#CEO .name {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: #5caf90;
+}
+
+#CEO .content {
+  background-color: #f8f8fb;
+  border: #eeeeee 1px solid;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 80px 0;
+}
+
+#CEO .content img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 1px solid #eeeeee;
+}
+
+#CEO .content #bio {
+  width: 600px;
+  text-align: center;
+  font-size: 15px;
+  color: #777777;
+}
+
+#CEO .stars {
+  color: #f27d0c;
+}
+
+#CEO .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+#CEO .info .position {
+  color: #777777;
+  letter-spacing: 0.5px;
+  font-size: 16px;
 }
