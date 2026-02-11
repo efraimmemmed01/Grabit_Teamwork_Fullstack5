@@ -9,6 +9,7 @@
 }
 
 #who-we-are article {
+  text-align: start;
   width: 762px;
   font-size: 14px;
 }
@@ -59,45 +60,12 @@ aside .img3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 28px;
   padding: 40px 0;
-}
-
-#services .heading p {
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.32px;
-  color: #777777;
-}
-
-#services .cards {
-  display: flex;
-  gap: 24px;
-}
-
-.card {
-  border-radius: 5px;
-  border: 1px solid #eeeeee;
-  padding: 40px 24px;
-  height: 198px;
-  width: 370px;
-  display: flex;
-  flex-direction: column;
-  gap: 8.6px;
-}
-
-.card .heading * {
-  font-weight: 500;
-  letter-spacing: 0.6px;
-  color: #4b5966;
+  text-align: center;
 }
 
 /* CEO */
-#CEO {
-  padding: 40px 0;
-}
-
 #CEO .name {
   font-size: 22px;
   font-weight: 600;
@@ -145,7 +113,95 @@ aside .img3 {
   gap: 6px;
 }
 
-#CEO .info .position {
+/* Stats */
+#stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Team */
+#team {
+  flex-direction: column;
+}
+
+#crew {
+  display: grid;
+  grid-template-columns: repeat(5, 300px);
+  gap: 16px;
+}
+
+.member {
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.member img {
+  width: 100%;
+  height: 320px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+
+.member .name {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Miscellanous */
+section {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+}
+
+.card {
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  padding: 40px 24px;
+  height: 198px;
+  width: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8.6px;
+  text-align: center;
+}
+
+.card .heading * {
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  color: #4b5966;
+}
+
+.card .cTitle {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0.32px;
+  color: #dddddd;
+}
+
+.heading p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.32px;
+  color: #777777;
+}
+
+.position {
   color: #777777;
   letter-spacing: 0.5px;
   font-size: 16px;
