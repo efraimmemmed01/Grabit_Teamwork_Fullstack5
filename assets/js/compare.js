@@ -33,6 +33,18 @@ function Debounce(search_key) {
 }
 
 
+class Container {
+    constructor(itemId) {
+        let container = document.querySelector(`.newCon${itemId}`)
+        container.addEventListener("click", () => {
+            container.remove()
+        })
+        return container
+    }
+
+}
+
+
 
 async function ApiSearch(search_key) {
     let list_of_request = []
@@ -64,7 +76,7 @@ async function ApiSearch(search_key) {
 
             // option.addEventListener("click",()=>{
             //     console.log("salam");
-                
+
             // })
         })
 
@@ -75,22 +87,23 @@ async function ApiSearch(search_key) {
 
 
 
-    let tbody = document.querySelector(".parent")
-    let select = document.querySelector("select")
-    let add = document.querySelector(".add")
+let tbody = document.querySelector(".parent")
+let select = document.querySelector("select")
+let add = document.querySelector(".add")
+let containers=[]
 
-    add.addEventListener("click",()=>{
-        console.log("salam");
-        
-        let selected = select.value
-        console.log(selected)
-        // console.log(selected);
-        changed = false
-        data.forEach((item)=>{
-            if (item.id ==selected && !changed) {
-                changed=true
-                tbody.innerHTML+=
-               ` <div class="container">
+add.addEventListener("click", () => {
+    console.log("salam");
+
+    let selected = select.value
+    console.log(selected)
+    // console.log(selected);
+    changed = false
+    data.forEach((item) => {
+        if (item.id == selected && !changed) {
+            changed = true
+            tbody.innerHTML +=
+                ` <div class="container newCon${item.id}">
                     <div class="img-con"><img src=${item.images[0]}></img></div>
                     <h3 class="salam">${item.title}</h3>
                     <h3 class="salam">Commerce</h3>
@@ -103,29 +116,32 @@ async function ApiSearch(search_key) {
                     <h3 class="salam">10kq</h3>
                     <h3 class="salam">${item.description}</h3   >
                 </div>`
-            }
-            
-            
-        })  
-        // console.log(filtered_data.title);
-        
-
-        
-    })
-
-
-
-
-
-    // APICALL()
-
-    let api_search = document.querySelector("input")
-
-    api_search.addEventListener("input", () => {
-        let search = api_search.value
-        search = search.trim()
-        if(search!=""){
-            Debounce(search)
+            containers.push(new Container(item.id))
         }
+
+
     })
+    // console.log(filtered_data.title);
+
+
+
+})
+
+
+
+
+
+// APICALL()
+
+let api_search = document.querySelector(".searchinput")
+
+api_search.addEventListener("input", () => {
+    console.log("salam");
+
+    let search = api_search.value
+    search = search.trim()
+    if (search != "") {
+        Debounce(search)
+    }
+})
 // apiSearch("s")
