@@ -1,11 +1,363 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Cart</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grabit - About</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css"
+      integrity="sha512-NhLySQDkiKSKnT+R795uaHWRQ7D3VuIvgeOLCK8cWq4w5fq4sWF90gj8eURpTqn/f1mFzqClpOz8JPlgVTLfFw=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/cart.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="top-nav">
+        <ul>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-phone-volume"></i>+91 987 654 3210</a
+            >
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-whatsapp"></i>+91 987 654 3210</a>
+          </li>
+        </ul>
+        <p>World`s Fastest Online Shopping Destination</p>
+        <ul id="right">
+          <li><a href="">Help?</a></li>
+          <li><a href="">Track Order?</a></li>
+          <li>
+            <button>English <i class="fa-solid fa-angle-down"></i></button>
+          </li>
+          <li>
+            <button>Dollar <i class="fa-solid fa-angle-down"></i></button>
+          </li>
+        </ul>
+      </nav>
+
+      <nav id="mid-nav">
+        <div id="brand-logo">
+          <img src="./assets/img/head-and-foot/logo.png" alt="Grabit Logo" />
+        </div>
+
+        <form id="search">
+          <input type="text" placeholder="Search Products..." />
+          <button>
+            <i class="fa-classic fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <ul id="mid-right">
+          <li>
+            <div class="right-icon">
+              <img src="./assets/img/head-and-foot/User.png" />
+            </div>
+            <div>
+              <p class="right-title">Account</p>
+              <p id="login-status">LOGIN</p>
+            </div>
+          </li>
+          <li>
+            <div class="right-icon">
+              <img src="./assets/img/head-and-foot/Wishlist.png" />
+            </div>
+            <div>
+              <p class="right-title">Wishlist</p>
+              <p id="wish-counter">0-ITEMS</p>
+            </div>
+          </li>
+          <li>
+            <div class="right-icon">
+              <img src="./assets/img/head-and-foot/Cart.png" />
+            </div>
+            <div>
+              <p class="right-title">Cart</p>
+              <p id="cart-counter">0-ITEMS</p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <nav id="bot-nav">
+        <button class="button">
+          <img src="./assets/img/head-and-foot/grid4.png" /> All Categories
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <ul>
+          <li>
+            <button>Home <i class="fa-solid fa-angle-down"></i></button>
+          </li>
+          <li>
+            <button>Categories <i class="fa-solid fa-angle-down"></i></button>
+          </li>
+          <li>
+            <button>Products <i class="fa-solid fa-angle-down"></i></button>
+          </li>
+          <li>
+            <button>Blog <i class="fa-solid fa-angle-down"></i></button>
+          </li>
+          <li>
+            <button>Pages <i class="fa-solid fa-angle-down"></i></button>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./assets/img/head-and-foot/discount.png" /> Offers</a
+            >
+          </li>
+        </ul>
+        <button class="button">
+          <i class="fa-classic fa-solid fa-location-dot"></i> New York
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+      </nav>
+    </header>
+
+
+  <main>
+  <section class="cart-page">
+
+    <aside class="cart-summary">
+      <h2>Summary</h2>
+      <p>Estimate Shipping</p>
+
+      <label>Country *</label>
+      <select><option>Country</option></select>
+
+      <label>State/Province</label>
+      <select></select>
+
+      <label>Zip/Postal Code</label>
+      <input type="text" placeholder="Zip/Postal Code">
+
+      <div class="row">
+        <span>Sub-Total</span>
+        <strong>$162.00</strong>
+      </div>
+
+      <div class="row">
+        <span>Delivery Charges</span>
+        <strong>$32.40</strong>
+      </div>
+
+      <div class="row total">
+        <span>Total Amount</span>
+        <strong>$194.40</strong>
+      </div>
+    </aside>
+
+    <section class="cart-content">
+
+      <div class="cart-head">
+        <span>Product</span>
+        <span>Price</span>
+        <span>Quantity</span>
+        <span>Total</span>
+        <span>Action</span>
+      </div>
+
+     <div class="cart-item">
+      <img src="assets/img/cart/53_1.jpg.png" alt="">
+  <p>Women's wallet Hand Purse</p>
+  <span>$70</span>
+  <div class="qty">
+    <button>-</button>
+    <span>1</span>
+    <button>+</button>
+  </div>
+  <span>$70</span>
+  <button>🗑</button>
+</div>
+
+<div class="cart-item">
+  <img src="assets/img/cart/48_1.jpg.png" alt="">
+  <p>Rose Gold Earring</p>
+  <span>$80</span>
+  <div class="qty">
+    <button>-</button>
+    <span>1</span>
+    <button>+</button>
+  </div>
+  <span>$80</span>
+  <button>🗑</button>
+</div>
+
+<div class="cart-item">
+  <img src="assets/img/cart/21_1.jpg.png" alt="">
+  <p>Apple</p>
+  <span>$12</span>
+  <div class="qty">
+    <button>-</button>
+    <span>1</span>
+    <button>+</button>
+  </div>
+  <span>$12</span>
+  <button>🗑</button>
+</div>
+
+      <button class="checkout-btn">Check Out</button>
+
+    </section>
+
+  </section>
+
+  <!--2-->
+
+<section class="new-arrivals">
+  <div class="na-container">
+
+    <div class="na-header">
+      <h2>New Arrivals</h2>
+      <p>Browse The Collection of Top Products</p>
+    </div>
+
+    <div class="na-products">
+       <article class="product-card">
+      <div class="badge sale">SALE</div>
+      <div class="product-image">
+        <img src="assets/img/cart/1.png" alt="Mix Nuts">
+      </div>
+      <span class="category">Dried Fruits</span>
+      <h4>Mixed Nuts Berries Pack</h4>
+      <div class="rating">★★★★★</div>
+      <div class="price">
+        <span class="new-price">$56.00</span>
+        <span class="old-price">$45.00</span>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="badge sale">SALE</div>
+      <div class="product-image">
+        <img src="assets/img/cart/2.png" alt="">
+      </div>
+      <span class="category">Cookies</span>
+      <h4>Multi Grain Combo Cookies</h4>
+      <div class="rating">★★★★★</div>
+      <div class="price">
+        <span class="new-price">$30.00</span>
+        <span class="old-price">$25.00</span>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image">
+        <img src="assets/img/cart/3.png" alt="">
+      </div>
+      <span class="category">Foods</span>
+      <h4>Fresh Mango Juice Pack</h4>
+      <div class="rating">★★★★★</div>
+      <div class="price">
+        <span class="new-price">$65.00</span>
+        <span class="old-price">$46.00</span>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="badge sale">SALE</div>
+      <div class="product-image">
+        <img src="assets/img/cart/4.png" alt="">
+      </div>
+      <span class="category">Dried Fruits</span>
+      <h4>Dates Value Fresh Pouch</h4>
+      <div class="rating">★★★★★</div>
+      <div class="price">
+        <span class="new-price">$85.00</span>
+        <span class="old-price">$78.00</span>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="badge new">NEW</div>
+      <div class="product-image">
+        <img src="assets/img/cart/5.png" alt="">
+      </div>
+      <span class="category">Foods</span>
+      <h4>Stick Fiber Masala Magic</h4>
+      <div class="rating">★★★★★</div>
+      <div class="price">
+        <span class="new-price">$50.00</span>
+        <span class="old-price">$45.00</span>
+    </div>
+
+  </div>
+</section>
+
+</main>
+  <footer class="footer-container">
+    <div class="footer-content">
+        <div class="footer-column brand-info">
+            <img src="/assets/img/logo.png.png" alt="Grabit Logo" class="footer-logo">
+            <p>Grabit is the biggest market of grocery products. Get your daily needs from our store.</p>
+            <div class="app-buttons">
+                <img src="/assets/img/android.png.png" alt="Google Play">
+                <img src="/assets/img/apple.png.png" alt="App Store">
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Category</h3>
+            <ul>
+                <li><a href="#">Dried Fruit</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Foods</a></li>
+                <li><a href="#">Fresh Fruit</a></li>
+                <li><a href="#">Tuber Root</a></li>
+                <li><a href="#">Vegetables</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Legal Notice</a></li>
+                <li><a href="#">Terms & conditions</a></li>
+                <li><a href="#">Secure payment</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Account</h3>
+            <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Become a Vendor</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+                <li><a href="#">Payments</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <div class="contact-info">
+                <p>📍 2548 Broaddus Maple Court, Madisonville KY 42431, USA</p>
+                <p>📞 +90 5679543218</p>
+                <p>✉️ example@email.com</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="assets/img/Item → Link (1).png" alt=""></a> <a href="#"><img src="assets/img/Item → Link (2).png" alt=""></a> <a href="#"><img src="assets/img/Item → Link (3).png" alt=""></a> <a href="#"><img src="assets/img/Vector.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright © grabit all rights reserved. Powered by grabit.</p>
+        <div class="payment-methods">
+            <img src="/assets/img/visa.png" alt="Visa">
+            <img src="assets/img/logo.png" alt="Mastercard">
+            <img src="assets/img/paypal-logo.png" alt="Paypal">
+        </div>
+    </div>
+</footer>
+
+
+  </body>
 </html>
