@@ -39,7 +39,7 @@ async function ApiSearch(search_key) {
     let api_array;
 
     let offset = 0
-    let count = 10
+    let count = 100
     do {
         api_array = await APICALL(count, offset)
 
@@ -55,23 +55,77 @@ async function ApiSearch(search_key) {
 
     // if()
     console.log(`list of request = ${list_of_request.length}`);
+    select.innerHTML = ""
+    if (list_of_request.length > 0) {
 
-    return list_of_request
-}
+        list_of_request.forEach(item => {
+            select.innerHTML += `<option value="${item.id}">${item.title}</option>`
+            // let option = document.querySelector(`#a${item.id}`)
 
-
-// APICALL()
-
-let api_search = document.querySelector("input")
-
-api_search.addEventListener("input", () => {
-    let search = api_search.value
-    search = search.trim()
-    if (search != "") {
-        Debounce(search)
+            // option.addEventListener("click",()=>{
+            //     console.log("salam");
+                
+            // })
+        })
 
     }
 
 
-})
+}
+
+
+
+    let tbody = document.querySelector(".parent")
+    let select = document.querySelector("select")
+    let add = document.querySelector(".add")
+
+    add.addEventListener("click",()=>{
+        console.log("salam");
+        
+        let selected = select.value
+        console.log(selected)
+        // console.log(selected);
+        changed = false
+        data.forEach((item)=>{
+            if (item.id ==selected && !changed) {
+                changed=true
+                tbody.innerHTML+=
+               ` <div class="container">
+                    <div class="img-con"><img src=${item.images[0]}></img></div>
+                    <h3 class="salam">${item.title}</h3>
+                    <h3 class="salam">Commerce</h3>
+                    <h3 class="salam">⭐⭐⭐⭐⭐</h3>
+                    <h3 class="salam">Aviable</h3>
+                    <h3 class="salam">Date: ${item.creationAt}</h3>
+                    <h3 class="salam">Brand: ${item.title}</h3>
+                    <h3 class="salam">${item.id}</h3>
+                    <h3 class="salam">500</h3>
+                    <h3 class="salam">10kq</h3>
+                    <h3 class="salam">${item.description}</h3   >
+                </div>`
+            }
+            
+            
+        })  
+        // console.log(filtered_data.title);
+        
+
+        
+    })
+
+
+
+
+
+    // APICALL()
+
+    let api_search = document.querySelector("input")
+
+    api_search.addEventListener("input", () => {
+        let search = api_search.value
+        search = search.trim()
+        if(search!=""){
+            Debounce(search)
+        }
+    })
 // apiSearch("s")
