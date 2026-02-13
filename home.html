@@ -10,42 +10,114 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/page.css" />
 </head>
 
 <body>
+  <header>
+    <nav id="top-nav">
+      <ul>
+        <li>
+          <a href=""><i class="fa-solid fa-phone-volume"></i>+91 987 654 3210</a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-whatsapp"></i>+91 987 654 3210</a>
+        </li>
+      </ul>
+      <p>World`s Fastest Online Shopping Destination</p>
+      <ul id="right">
+        <li><a href="">Help?</a></li>
+        <li><a href="">Track Order?</a></li>
+        <li>
+          <button>English <i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <button>Dollar <i class="fa-solid fa-angle-down"></i></button>
+        </li>
+      </ul>
+    </nav>
 
-    <header class="navbar">
-        <div class="container top-nav">
-            <div class="logo">
-                <h1 class="logo-text">Grab<span>it</span></h1>
-            </div>
-            <div class="search-box">
-                <input type="text" placeholder="Search Products...">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
-            <div class="user-actions">
-                <div class="action"><i class="fa-regular fa-user"></i> <span>Account<br><b>Login</b></span></div>
-                <div class="action"><i class="fa-regular fa-heart"></i> <span>Wishlist<br><b>3-Items</b></span></div>
-                <div class="action"><i class="fa-solid fa-cart-shopping"></i> <span>Cart<br><b>3-Items</b></span></div>
-            </div>
-        </div>
-        <nav class="main-nav">
-            <div class="container nav-wrapper">
-                <div class="all-cat-btn"><i class="fa fa-th-large"></i> All Categories <i
-                        class="fa fa-chevron-down"></i></div>
-                <ul class="nav-links">
-                    <li>Home <i class="fa fa-chevron-down"></i></li>
-                    <li>Categories <i class="fa fa-chevron-down"></i></li>
-                    <li>Products <i class="fa fa-chevron-down"></i></li>
-                    <li>Blog <i class="fa fa-chevron-down"></i></li>
-                    <li>Pages <i class="fa fa-chevron-down"></i></li>
-                    <li><i class="fa fa-percent"></i> Offers</li>
-                </ul>
-                <div class="location-box"><i class="fa-solid fa-location-dot"></i> New York <i
-                        class="fa fa-chevron-down"></i></div>
-            </div>
-        </nav>
-    </header>
+    <nav id="mid-nav">
+      <div id="brand-logo">
+        <img src="./assets/img/head-and-foot/logo.png" alt="Grabit Logo" />
+      </div>
+
+      <form id="search">
+        <input type="text" placeholder="Search Products..." />
+        <button>
+          <i class="fa-classic fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <ul id="mid-right">
+        <li>
+          <div class="right-icon">
+            <img src="./assets/img/head-and-foot/User.png" />
+          </div>
+          <div>
+            <p class="right-title">Account</p>
+            <p id="login-status">LOGIN</p>
+          </div>
+        </li>
+        <li>
+          <div class="right-icon">
+            <img src="./assets/img/head-and-foot/Wishlist.png" />
+          </div>
+          <div>
+            <p class="right-title">Wishlist</p>
+            <p id="wish-counter">0-ITEMS</p>
+          </div>
+        </li>
+        <li>
+          <div class="right-icon">
+            <img src="./assets/img/head-and-foot/Cart.png" />
+          </div>
+          <div>
+            <p class="right-title">Cart</p>
+            <p id="cart-counter">0-ITEMS</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="bot-nav">
+      <button class="button">
+        <img src="./assets/img/head-and-foot/grid4.png" /> All Categories
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+          <button><i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <a href="index.html">Categories</a>
+          <button><i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <a href="">Products</a>
+          <button><i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <a href="">Blog</a>
+          <button><i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <a href=""></a>
+          <button>Pages <i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/img/head-and-foot/discount.png" /> Offers
+          </a>
+        </li>
+      </ul>
+      <button class="button">
+        <i class="fa-classic fa-solid fa-location-dot"></i> New York
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+    </nav>
+  </header>
 
     <main>
         <section class="container hero-section">

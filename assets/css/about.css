@@ -1,3 +1,7 @@
+main{
+  background-color: white;
+}
+
 #who-we-are {
   width: 100%;
   display: flex;
@@ -155,6 +159,8 @@ aside .img3 {
 
 /* Miscellanous */
 section {
+    background-color: white;
+
   display: flex;
   align-items: center;
   gap: 28px;
