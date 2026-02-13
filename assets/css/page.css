@@ -255,7 +255,6 @@ footer {
   padding-bottom: 10px;
 }
 
-/* Başlık altındaki ince çizgi */
 .footer-column h3::after {
   content: "";
   position: absolute;
@@ -263,7 +262,7 @@ footer {
   bottom: 0;
   width: 30px;
   height: 2px;
-  background-color: #27ae60; /* Grabit yeşili */
+  background-color: #27ae60;
 }
 
 .footer-column ul {
