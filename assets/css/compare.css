@@ -6,7 +6,8 @@
     list-style: none;
 
 }
-main{
+
+main {
     width: 90%;
     margin: 0 auto;
 }
@@ -14,7 +15,10 @@ main{
 :root {
     --border-m: 1px rgba(0, 0, 0, 0.596) solid;
 }
-.parent{
+
+.parent {
+    margin-top: 20px;
+
     img {
         width: 200px;
         height: 200px;
@@ -85,17 +89,15 @@ table {
     height: 50px;
     overflow: hidden;
     /* display: block; */
-}
 
-h3 {
     font-size: 16px;
     height: 50px;
     border: 1px solid rgba(0, 0, 0, 0.214);
     display: inline-block;
     text-align: center;
-
-
 }
+
+/* h3 {} */
 
 .img-con {
     width: 200px;
