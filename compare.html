@@ -1,11 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="assets/css/page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css"
+        integrity="sha512-NhLySQDkiKSKnT+R795uaHWRQ7D3VuIvgeOLCK8cWq4w5fq4sWF90gj8eURpTqn/f1mFzqClpOz8JPlgVTLfFw=="
+        crossorigin="anonymous" /> -->
+
+    <link rel="stylesheet" href="/assets/css/compare.css">
+    <title>Grabit</title>
+    <link rel="stylesheet" href="./assets/css/page.css" />
 </head>
+
 <body>
+  <header>
+    <nav id="top-nav">
+      <ul>
+        <li>
+          <a href=""><i class="fa-solid fa-phone-volume"></i>+91 987 654 3210</a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-whatsapp"></i>+91 987 654 3210</a>
+        </li>
+      </ul>
+      <p>World`s Fastest Online Shopping Destination</p>
+      <ul id="right">
+        <li><a href="">Help?</a></li>
+        <li><a href="">Track Order?</a></li>
+        <li>
+          <button>English <i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <button>Dollar <i class="fa-solid fa-angle-down"></i></button>
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="mid-nav">
+      <div id="brand-logo">
+        <img src="./assets/img/head-and-foot/logo.png" alt="Grabit Logo" />
+      </div>
+
+      <form id="search">
+        <input type="text" placeholder="Search Products..." />
+        <button>
+          <i class="fa-classic fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <ul id="mid-right">
+        <li>
+          <div class="right-icon">
+            <img src="./assets/img/head-and-foot/User.png" />
+          </div>
+          <div>
+            <p class="right-title">Account</p>
+            <p id="login-status">LOGIN</p>
+          </div>
+        </li>
+        <li>
+          <div class="right-icon">
+            <img src="./assets/img/head-and-foot/Wishlist.png" />
+          </div>
+          <div>
+            <p class="right-title">Wishlist</p>
+            <p id="wish-counter">0-ITEMS</p>
+          </div>
+        </li>
+        <li>
+          <div class="right-icon">
+            <img src="./assets/img/head-and-foot/Cart.png" />
+          </div>
+          <div>
+            <p class="right-title">Cart</p>
+            <p id="cart-counter">0-ITEMS</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="bot-nav">
+      <button class="button">
+        <img src="./assets/img/head-and-foot/grid4.png" /> All Categories
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+          <button><i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <a href="index.html">Categories</a>
+          <button><i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <a href="">Products</a>
+          <button><i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <a href="">Blog</a>
+          <button><i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <a href=""></a>
+          <button>Pages <i class="fa-solid fa-angle-down"></i></button>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/img/head-and-foot/discount.png" /> Offers
+          </a>
+        </li>
+      </ul>
+      <button class="button">
+        <i class="fa-classic fa-solid fa-location-dot"></i> New York
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+    </nav>
+  </header>
+    <!-- <header>
+        <nav id="top-nav">
+            <ul>
+                <li>
+                    <a href=""><i class="fa-solid fa-phone-volume"></i>+91 987 654 3210</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i>+91 987 654 3210</a>
+                </li>
+            </ul>
+            <p>World`s Fastest Online Shopping Destination</p>
+            <ul id="right">
+                <li><a href="">Help?</a></li>
+                <li><a href="">Track Order?</a></li>
+                <li>
+                    <button>English <i class="fa-solid fa-angle-down"></i></button>
+                </li>
+                <li>
+                    <button>Dollar <i class="fa-solid fa-angle-down"></i></button>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="mid-nav">
+            <div id="brand-logo">
+                <img src="./assets/img/head-and-foot/logo.png" alt="Grabit Logo" />
+            </div>
+
+            <form id="search">
+                <input type="text" placeholder="Search Products..." />
+                <button>
+                    <i class="fa-classic fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <ul id="mid-right">
+                <li>
+                    <div class="right-icon">
+                        <img src="./assets/img/head-and-foot/User.png" />
+                    </div>
+                    <div>
+                        <p class="right-title">Account</p>
+                        <p id="login-status">LOGIN</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="right-icon">
+                        <img src="./assets/img/head-and-foot/Wishlist.png" />
+                    </div>
+                    <div>
+                        <p class="right-title">Wishlist</p>
+                        <p id="wish-counter">0-ITEMS</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="right-icon">
+                        <img src="./assets/img/head-and-foot/Cart.png" />
+                    </div>
+                    <div>
+                        <p class="right-title">Cart</p>
+                        <p id="cart-counter">0-ITEMS</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="bot-nav">
+            <button class="button">
+                <img src="./assets/img/head-and-foot/grid4.png" /> All Categories
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul>
+                <li>
+                    <button>Home <i class="fa-solid fa-angle-down"></i></button>
+                </li>
+                <li>
+                    <button>Categories <i class="fa-solid fa-angle-down"></i></button>
+                </li>
+                <li>
+                    <button>Products <i class="fa-solid fa-angle-down"></i></button>
+                </li>
+                <li>
+                    <button>Blog <i class="fa-solid fa-angle-down"></i></button>
+                </li>
+                <li>
+                    <button>Pages <i class="fa-solid fa-angle-down"></i></button>
+                </li>
+                <li>
+                    <a href=""><img src="./assets/img/head-and-foot/discount.png" /> Offers</a>
+                </li>
+            </ul>
+            <button class="button">
+                <i class="fa-classic fa-solid fa-location-dot"></i> New York
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+        </nav>
+    </header> -->
+
+
+    <main>
+
+        <input type="text" class="searchinput" placeholder="Search">
+        <select>
+        </select>
+        <button class="add">Add</button>
+
+
+        <table>
+            <div class="parent">
+                <div>
+                    <div class="container">
+                        <div class="img-con">Product Image</div>
+                        <h3 class="salam">Name</h3>
+                        <h3 class="salam">Category</h3>
+                        <h3 class="salam">Ratings</h3>
+                        <h3 class="salam">Aviability</h3>
+                        <h3 class="salam">Date</h3>
+                        <h3 class="salam">Brand</h3>
+                        <h3 class="salam">SKU</h3>
+                        <h3 class="salam">Quantity</h3>
+                        <h3 class="salam">Weight</h3>
+                        <h3 class="salam">Description</h3>
+                    </div>
+                </div>
+                
+            </div>
+
+        </table>
+    </main>
+
     
+   <footer class="footer-container">
+    <div class="footer-content">
+        <div class="footer-column brand-info">
+            <img src="/assets/img/logo.png.png" alt="Grabit Logo" class="footer-logo">
+            <p>Grabit is the biggest market of grocery products. Get your daily needs from our store.</p>
+            <div class="app-buttons">
+                <img src="/assets/img/android.png.png" alt="Google Play">
+                <img src="/assets/img/apple.png.png" alt="App Store">
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Category</h3>
+            <ul>
+                <li><a href="#">Dried Fruit</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Foods</a></li>
+                <li><a href="#">Fresh Fruit</a></li>
+                <li><a href="#">Tuber Root</a></li>
+                <li><a href="#">Vegetables</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Legal Notice</a></li>
+                <li><a href="#">Terms & conditions</a></li>
+                <li><a href="#">Secure payment</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Account</h3>
+            <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Become a Vendor</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+                <li><a href="#">Payments</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <div class="contact-info">
+                <p>📍 2548 Broaddus Maple Court, Madisonville KY 42431, USA</p>
+                <p>📞 +90 5679543218</p>
+                <p>✉️ example@email.com</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="assets/img/Item → Link (1).png" alt=""></a> <a href="#"><img src="assets/img/Item → Link (2).png" alt=""></a> <a href="#"><img src="assets/img/Item → Link (3).png" alt=""></a> <a href="#"><img src="assets/img/Vector.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright © grabit all rights reserved. Powered by grabit.</p>
+        <div class="payment-methods">
+            <img src="/assets/img/visa.png" alt="Visa">
+            <img src="assets/img/logo.png" alt="Mastercard">
+            <img src="assets/img/paypal-logo.png" alt="Paypal">
+        </div>
+    </div>
+</footer>
+
+
+    <script src="assets/js/compare.js"></script>
 </body>
+
 </html>
