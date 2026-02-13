@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-Ticaret Arayüzü</title>
+    <link rel="stylesheet" href="assets/css/Wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
+
+    <div class="container">
+        <section class="wishlist-section">
+            <div class="section-title">
+                <h1>Product <span>Wishlist</span></h1>
+                <p>Your product wish is our first priority.</p>
+            </div>
+
+            <div class="wishlist-card">
+                <div class="card-header">
+                    <h2>WISHLIST</h2>
+                    <button class="btn-shop">Shop Now</button>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Date</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="wishlist-items">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="arrivals-section">
+            <div class="section-title">
+                <h1>New <span>Arrivals</span></h1>
+                <p>Browse The Collection Of Top Products</p>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
