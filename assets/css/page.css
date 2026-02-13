@@ -194,3 +194,122 @@ button {
 #bot-nav .button:active {
   background-color: var(--grabit-main-col);
 }
+
+/* Head title */
+#head-title {
+  height: 95px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#head-title .title-body {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 28px;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  font-size: 14px;
+  font-weight: 400;
+}
+#head-title .title-body p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#title-link a {
+  color: var(--grabit-main-col);
+}
+
+.container {
+  flex: 1;
+  padding: 0 172px;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-column h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Başlık altındaki ince çizgi */
+.footer-column h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #27ae60; /* Grabit yeşili */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #27ae60;
+}
+
+.brand-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.app-buttons img {
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.contact-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #eeeeee;
+  background-color: #f8f8fb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

@@ -1,0 +1,74 @@
+{
+  "members": [
+    {
+      "firstName": "Rais",
+      "lastName": "Fatullayev",
+      "position": "About Page",
+      "link": "https://github.com/RaisTheCoder",
+      "image": "https://avatars.githubusercontent.com/u/69309638?v=4"
+    },
+    {
+      "firstName": "Rahman",
+      "lastName": "Mammadov",
+      "position": "Cart Page",
+      "link": "https://github.com/rahmanmammadov",
+      "image": "https://avatars.githubusercontent.com/u/250086238?v=4"
+    },
+    {
+      "firstName": "Jafar",
+      "lastName": "Tarverdiyev",
+      "position": "Compare & Blog Detail",
+      "link": "https://github.com/JafarAkaAlien",
+      "image": "https://avatars.githubusercontent.com/u/57060105?v=4"
+    },
+    {
+      "firstName": "MirAziz",
+      "lastName": "Akbarov",
+      "position": "Wishlist",
+      "link": "https://github.com/azizakbarov1995-rgb",
+      "image": "https://avatars.githubusercontent.com/u/250088092?v=4"
+    },
+    {
+      "firstName": "Nurcahan",
+      "lastName": "Afandizada",
+      "position": "Left sidebar",
+      "link": "https://github.com/Nurcahanefendizade19",
+      "image": "https://avatars.githubusercontent.com/u/250087245?v=4"
+    },
+    {
+      "firstName": "Vusala",
+      "lastName": "Salmanova",
+      "position": "Fashion",
+      "link": "https://github.com/vusale44",
+      "image": "https://avatars.githubusercontent.com/u/234922380?v=4"
+    },
+    {
+      "firstName": "Ramazan",
+      "lastName": "Huseynzada",
+      "position": "Fashion",
+      "link": "https://github.com/Raemishex",
+      "image": "https://avatars.githubusercontent.com/u/247948454?v=4"
+    },
+    {
+      "firstName": "Tutu",
+      "lastName": "Mehbaliyeva",
+      "position": "Blog",
+      "link": "https://github.com/tutu-creator",
+      "image": "https://avatars.githubusercontent.com/u/250088800?v=4"
+    },
+    {
+      "firstName": "Rasul",
+      "lastName": "Ahmadov",
+      "position": "Home",
+      "link": "https://github.com/RasulAhmadov",
+      "image": "https://avatars.githubusercontent.com/u/223835881?v=4"
+    },
+    {
+      "firstName": "Rafiq",
+      "lastName": "Safarov",
+      "position": "Home",
+      "link": "https://github.com/rafiqseferov095-design",
+      "image": "https://avatars.githubusercontent.com/u/248711350?v=4"
+    }
+  ]
+}
